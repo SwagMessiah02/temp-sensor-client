@@ -59,7 +59,7 @@ void loop() {
     char buffer[43];
 
     snprintf(buffer, sizeof(buffer), 
-            "Temperatura: %.2lf °C Umidade: %.2lf %%", 100.0, 50.0);
+            "Temperatura: %.2lf °C Umidade: %.2lf %%", temp.temperature, humidity.relative_humidity);
 
     String mensagem = String(buffer);
 
